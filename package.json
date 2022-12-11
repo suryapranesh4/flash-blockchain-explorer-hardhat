@@ -2,16 +2,18 @@
   "name": "flash-blockchain-explorer-hardhat-ethereum",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts/deploy.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx hardhat node"
+    "start": "node scripts/deploy.js && npx hardhat node"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "babel-preset-env": "^1.7.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "hardhat": "^2.12.3"
   }
 }
